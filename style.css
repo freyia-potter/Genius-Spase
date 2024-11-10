@@ -1,0 +1,23 @@
+/*
+.main-title {border: 4px solid black;} задавання стилів через клас
+[type] {} задавання стилів через тип
+.main-section >h1 {color: aquamarine;} стилі батька наслідуються до нащадків (тількіи ті, що стосуються оформлення тексту) >h1 - звертання до конкретної дитини*/
+:root {
+    --colour-primary-light: #faf4ea;
+    --colour-primary-dark: #31261a;
+    --colour-brand-light: #819b57;
+    --colour-brand-dark: #465929;
+}
+/*Base*/
+body {color: var(--colour-primary-dark);}
+ul { list-style-type: none;}
+/*Header*/
+.button {color: var(--colour-primary-light); background-color: var(--colour-brand-light); border: 2px solid var(--colour-brand-light); border-radius: 8px; cursor: pointer;}
+.button:hover {color: var(--colour-brand-dark); background-color: transparent;}
+/*якщо стилі конфліктують, то застосовуються ті, що задані останніми, якщо не вказана специфічність (вага), наприклад, header .button (пробіл вказує на те, що кнопка лежить всередині хедеру)*/
+.menu-link {color: var(--colour-primary-light);}
+.menu-link:hover {color: var(--colour-brand-light);}
+.hero-title {color: var(--colour-primary-light);}
+.hero-title .accent {color: var(--colour-brand-light);} /*rgba - a для задавання прозорості 1 - не прозорий, 0 - прозорий*/
+.advantages-list {color: var(--colour-primary-light); background-color: var(--colour-brand-light);}
+.section-title .accent {color: var(--colour-brand-light);} /*{color: var(--colour-primary-dark);}*/
