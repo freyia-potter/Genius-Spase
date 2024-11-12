@@ -1,125 +1,198 @@
 <!DOCTYPE html>
-<html lang="uk"> <!--парний тег. вказана домінантна мова сторінки.-->
-<head> <!--парний тег-->
-    <meta charset="UTF-8"> <!--кодування символів-->
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" /> <!--кросбраузерність-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--адаптивність-->
-    <title>Сучасна пекарня</title> <!--заголовок для документу (назва, що відображається на вкладці в браузері)-->
-    <style> 
-    </style> <!--підключення внутрішніх стилів-->
-    <link rel="stylesheet" href="./style.css"> <!--підключення зовнішніх стилів-->
-</head>
-<body> <!--парний тег-->
-    <header> <!--шапка сторінки (парний тег)-->
-        <nav> <!--навігація (меню) (парний тег)-->
-            <a href="./">
-                <img src="./images/logo.svg" alt="Лого сучасної пекарні"> <!--додавання зображення. одиночний тег-->
-            </a>
-            <ul> <!--ненумерований перелік (маркований). парний тег-->
-                <li><a class="menu-link" href="#traditions-section" target="_blank">Наші традиції</a></li> <!--елемент переліку. парний тег. використовується для ul та ol--><!--a - парнний тег для задавання посилання для переходу-->
-                <!--dl - перелік типу "термін-визначення". парний тег. для терміну використовується тег dt, для визначення - dd-->
-                <li><a class="menu-link" href="#cooker-section">Шеф-кухарі</a></li>
-                <li><a class="menu-link" href="#format-section">Формати</a></li>
-                <li><a class="menu-link" href="#contacts-section">Контакти</a></li>
-            </ul>
+<html lang="uk">
+  <!--парний тег. вказана домінантна мова сторінки.-->
+  <head>
+    <!--парний тег-->
+    <meta charset="UTF-8" />
+    <!--кодування символів-->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <!--кросбраузерність-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--адаптивність-->
+    <title>Сучасна пекарня</title>
+    <!--заголовок для документу (назва, що відображається на вкладці в браузері)-->
+    <style></style>
+    <!--підключення внутрішніх стилів-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--підключення зовнішніх стилів-->
+  </head>
+  <body>
+    <!--парний тег-->
+    <header>
+      <div class="container">
+        <!--шапка сторінки (парний тег)-->
+        <nav>
+          <!--навігація (меню) (парний тег)-->
+          <a href="./">
+            <img src="./images/logo.svg" alt="Лого сучасної пекарні" />
+            <!--додавання зображення. одиночний тег-->
+          </a>
+          <ul>
+            <!--ненумерований перелік (маркований). парний тег-->
+            <li>
+              <a class="menu-link" href="#traditions-section" target="_blank">Наші традиції</a>
+            </li>
+            <!--елемент переліку. парний тег. використовується для ul та ol--><!--a - парнний тег для задавання посилання для переходу-->
+            <!--dl - перелік типу "термін-визначення". парний тег. для терміну використовується тег dt, для визначення - dd-->
+            <li><a class="menu-link" href="#chef-section">Шеф-кухарі</a></li>
+            <li><a class="menu-link" href="#format-section">Формати</a></li>
+            <li><a class="menu-link" href="#contacts-section">Контакти</a></li>
+          </ul>
         </nav>
         <button class="button" type="button">Замовити дзвінок</button>
+      </div>
     </header>
-    <main> <!--основний контент сторінки (парний тег)-->
-        <section>
-            <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1> <!--h1 може бути лише один на сторінці. заголовок. парний тег.--> <!--рядкове підключення стилів через атрибут style.--> <!--class для задавання стилю елементу-->
-        </section> <!--частина сторінки, яка тематично групує вміст і завжди має заголовок (парний тег)-->
-        <section id="traditions-section">
-            <ul class="advantages-list">
-                <li>Великий попит на ринку</li>
-                <li>Доступні за бюджетом формати</li>
-                <li>Досвідчена управлінська команда</li>
-            </ul>
-            <h2 class="section-title">Новий формат традицій</h2>
-            <p>
-                <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та натуральність інгредієнтів.</p> <!--параграф. парний тег. span використовується для стилізації-->
-            <p>Ми працюємо як найвідоміші мережі—<span>5 хвилин і замовлення готове</span>. А ще у наших пекарень стильний дизайн та висока якість обслуговування!</p>
-            <img src="./images/Mask_group.jpg" alt="Чоловік зі стійкою батонів">
-        </section>
-        <section id="cooker-section">
-            <h2 class="section-title">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
-            <ul>
-                <li>
-                    <article>
-                    <h3>Настя</h3>
-                    <p>Привіт, я Настя!</p>
-                    <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
-                    <p>Я випічу для вас найсмачніщі вироби!</p>
-                    <img src="./images/nastya.jpg" alt="Пекар Настя">
-                </article> <!--частина сторінки, призначена для незалежного розповсюдження чи повторного використання. Наприклад, може містити статтю на форумі,
+    <main>
+      <!--основний контент сторінки (парний тег)-->
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
+          <!--h1 може бути лише один на сторінці. заголовок. парний тег.-->
+          <!--рядкове підключення стилів через атрибут style.-->
+          <!--class для задавання стилю елементу-->
+        </div>
+      </section>
+      <!--частина сторінки, яка тематично групує вміст і завжди має заголовок (парний тег)-->
+      <section>
+        <div class="container">
+          <h2 class="visually-hidden">Наші переваги</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">Великий попит на ринку</li>
+            <li class="advantages-item">Доступні за бюджетом формати</li>
+            <li class="advantages-item">Досвідчена управлінська команда</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section traditions-section" id="traditions-section">
+        <div class="container">
+          <h2 class="traditions-title section-title">Новий формат традицій</h2>
+          <p class="traditions-text"><span class="brand-uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та натуральність інгредієнтів.</p>
+          <!--параграф. парний тег. span використовується для стилізації-->
+          <p class="traditions-text">Ми працюємо як найвідоміші мережі—<span class="brand">5 хвилин і замовлення готове</span>. А ще у наших пекарень стильний дизайн та висока якість обслуговування!</p>
+          <img src="./images/Mask_group.jpg" alt="Чоловік зі стійкою батонів" />
+        </div>
+      </section>
+      <section class="section" id="chef-section">
+        <div class="container">
+          <h2 class="chefs-title section-title text-center">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
+          <ul>
+            <li>
+              <article>
+                <h3 class="chef-title">Настя</h3>
+                <p>Привіт, я Настя!</p>
+                <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
+                <p>Я випічу для вас найсмачніщі вироби!</p>
+                <img src="./images/nastya.jpg" alt="Пекар Настя" />
+              </article>
+              <!--частина сторінки, призначена для незалежного розповсюдження чи повторного використання. Наприклад, може містити статтю на форумі,
                 запис у блозі, тд. (парний тег)-->
             </li>
-                <li>
-                    <article>
-                    <h3>Влад</h3>
-                    <p>Привіт, я Влад!</p>
-                    <p>Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу
-                        випічку!</p>
-                    <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
-                    <img src="./images/vlad.jpg" alt="Пекар Влад">
-                </article>
+            <li>
+              <article>
+                <h3 class="chef-title">Влад</h3>
+                <p>Привіт, я Влад!</p>
+                <p class="chef-text">Мій кодитерський стаж вже 18 років. <span class="brand-uppercase">shop bakery</span> - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
+                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                <img src="./images/vlad.jpg" alt="Пекар Влад" />
+              </article>
             </li>
-            </ul>            
-        </section>
-        <section id="format-section">
-            <h2 class="section-title">Формати</h2>
-            <ul>
-                <li>
-                    <article>
-                    <h3 lang="en">Walrus</h3>
-                </article>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="format-section">
+        <div class="container">
+          <h2 class="formats-title section-title text-center">Формати</h2>
+          <ul>
+            <li>
+              <article>
+                <h3 lang="en" class="format-title">Walrus</h3>
+                <p class="format-text">Площа: до 120 м2</p>
+                <p class="format-text">Меню: розширене меню</p>
+                <p class="format-text">Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                <p class="format-text">Посадкові місця: є</p>
+              </article>
             </li>
-                <li>
-                    <article>
-                    <h3 lang="en">Horseshoe</h3>
-                </article>
+            <li>
+              <article>
+                <h3 lang="en" class="format-title">Horseshoe</h3>
+                <div class="format-text">
+                  <p>Площа: до 25 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </div>
+              </article>
             </li>
-                <li>
-                    <article>
-                    <h3 lang="en">Handlebar</h3>
-                </article>
+            <li>
+              <article>
+                <h3 lang="en" class="format-title">Handlebar</h3>
+                <div class="format-text">
+                  <p>Площа: до 15 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </div>
+              </article>
             </li>
-            </ul>
-        </section>
-        <section id="contacts-section">
-            <h2 class="section-title">Приєднуйтеся до мережі пекарень</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1731152965138!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="contacts-section">
+        <div class="container">
+          <h2 class="contacts-title section-title">Приєднуйтеся до мережі пекарень</h2>
+          <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+          <button class="button" type="button">Замовити дзвінок</button>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1731152965138!5m2!1sru!2sua"
+            width="100%"
+            max-width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
     </main>
-    <footer> <!--“підвал” сторінки (парний тег)-->
+    <footer>
+      <div class="container">
+        <!--“підвал” сторінки (парний тег)-->
         <nav>
-           <a href=""><img src="./images/logo.svg" alt="Лого сучасної пекарні"></a>
-            <ul> 
-                <li><a class="menu-link" href="#traditions-section" target="_blank">Наші традиції</a></li>
-                <li><a class="menu-link" href="#cooker-section">Шеф-кухарі</a></li>
-                <li><a class="menu-link" href="#format-section">Формати</a></li>
-                <li><a class="menu-link" href="#contacts-section">Контакти</a></li>
-            </ul>
+          <a href=""><img src="./images/logo.svg" alt="Лого сучасної пекарні" /></a>
+          <ul>
+            <li>
+              <a class="menu-link" href="#traditions-section" target="_blank">Наші традиції</a>
+            </li>
+            <li><a class="menu-link" href="#chef-section">Шеф-кухарі</a></li>
+            <li><a class="menu-link" href="#format-section">Формати</a></li>
+            <li><a class="menu-link" href="#contacts-section">Контакти</a></li>
+          </ul>
         </nav>
         <address>
-            <ul>
-                <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-                <li><a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-                <li><a href="https://maps.app.goo.gl/pMMJMBf3eoMzgbnJA" target="_blank">Україна, м. Київ, вул. Січових Стрільців 54</a></li>
-                <li>
-                    <a href="#">
-                        <!--facebook icon-->
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <!--instagram icon-->
-                    </a>
-                </li>
-            </ul>
-            <a href="" target="_blank">Політика конфіденційності</a>
-            <p>&copy; 2022 Дані захищені</p>
+          <ul>
+            <li><a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+            <li>
+              <a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            </li>
+            <li>
+              <a class="address-link" href="https://maps.app.goo.gl/pMMJMBf3eoMzgbnJA" target="_blank">Україна, м. Київ, вул. Січових Стрільців 54</a>
+            </li>
+            <li>
+              <a href="#">
+                <!--facebook icon-->
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!--instagram icon-->
+              </a>
+            </li>
+          </ul>
+          <a class="address-link" target="_blank">Політика конфіденційності</a>
+          <p class="address-copyright">&copy; 2022 Дані захищені</p>
         </address>
-    </footer> 
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
