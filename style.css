@@ -67,6 +67,8 @@ address {
 }
 ul {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 .visually-hidden {
   position: absolute;
@@ -118,6 +120,25 @@ ul {
   font-weight: 600;
 }
 
+/*Header*/
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  gap: 64px; /*додає відступи до флекс-елементів всередині контейнеру*/
+  flex-grow: 1; /*розтягує контент на все вільне місце*/
+  justify-content: center; /*відцентрували*/
+}
+
 /*Hero-section*/
 .hero-section {
   padding: 272px 0;
@@ -134,21 +155,38 @@ ul {
   color: var(--colour-brand-light);
 } /*rgba - a для задавання прозорості 1 - не прозорий, 0 - прозорий*/
 
+/*Advantages-section*/
+.advandages-section {
+  background-color: var(--colour-brand-light);
+  padding: 0px 16px; /*РАЗОБПАТЬСЯ С 24 ПИКСЕЛЯМИ. ОТКУДА ЛЕЗЕТ?*/
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between; /*атрибут забезпечує рівні відстані між айтемами*/
+  gap: 40px;
+}
+.advantages-item {
+  color: var(--colour-primary-light);
+  font-size: 20px;
+  font-weight: 300;
+}
 /*Tradition-section*/
 .traditions-section {
   padding-top: 96px;
 }
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.traditions-content {
+  min-width: 710px;
+  gap: 40px;
+}
 .traditions-title {
   margin-bottom: 42px;
 }
-.advantages-list {
-  color: var(--colour-primary-light);
-  background-color: var(--colour-brand-light);
-}
-.advantages-item {
-  font-size: 20px;
-  font-weight: 300;
-}
+
 .section-title {
   font-size: 64px;
   font-weight: 900;
@@ -165,6 +203,9 @@ ul {
 .traditions-text .brand {
   color: var(--colour-brand-light);
   font-weight: 600;
+}
+.traditions-text.limited {
+  max-width: 330px;
 }
 
 /*Chef-section*/
@@ -194,9 +235,21 @@ ul {
   font-size: 24px;
   font-weight: 600;
 }
+.formats-list {
+  display: flex;
+  gap: 20px;
+}
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
 .format-text {
   font-size: 14px;
   font-weight: 300;
+}
+.format-card {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 24px;
 }
 
 /*Contacts-section*/
