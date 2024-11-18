@@ -83,25 +83,33 @@
       <section class="section" id="chef-section">
         <div class="container">
           <h2 class="chefs-title section-title text-center">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
-          <ul>
+          <ul class="chef-list">
             <li>
-              <article>
-                <h3 class="chef-title">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
-                <p>Я випічу для вас найсмачніщі вироби!</p>
+              <article class="chef">
                 <img src="./images/nastya.jpg" alt="Пекар Настя" />
+                <div>
+                  <h3 class="chef-title">Настя</h3>
+                  <div class="chef-text-limited">
+                    <p>Привіт, я Настя!</p>
+                    <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
+                    <p>Я випічу для вас найсмачніщі вироби!</p>
+                  </div>
+                </div>
               </article>
               <!--частина сторінки, призначена для незалежного розповсюдження чи повторного використання. Наприклад, може містити статтю на форумі,
                 запис у блозі, тд. (парний тег)-->
             </li>
             <li>
-              <article>
-                <h3 class="chef-title">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <p class="chef-text">Мій кодитерський стаж вже 18 років. <span class="brand-uppercase">shop bakery</span> - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
-                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+              <article class="chef">
                 <img src="./images/vlad.jpg" alt="Пекар Влад" />
+                <div>
+                  <h3 class="chef-title">Влад</h3>
+                  <div class="chef-text-limited">
+                    <p>Привіт, я Влад!</p>
+                    <p class="chef-text">Мій кодитерський стаж вже 18 років. <span class="brand-uppercase">shop bakery</span> - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
+                    <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                  </div>
+                </div>
               </article>
             </li>
           </ul>
@@ -147,19 +155,23 @@
       </section>
       <section class="section" id="contacts-section">
         <div class="container">
-          <h2 class="contacts-title section-title">Приєднуйтеся до мережі пекарень</h2>
-          <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-          <button class="button" type="button">Замовити дзвінок</button>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1731152965138!5m2!1sru!2sua"
-            width="100%"
-            max-width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="container-contacts">
+            <div>
+              <h2 class="contacts-title section-title">Приєднуйтеся до мережі пекарень</h2>
+              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <button class="button" type="button">Замовити дзвінок</button>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1731152965138!5m2!1sru!2sua"
+              width="100%"
+              max-width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>

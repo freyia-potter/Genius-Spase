@@ -10,28 +10,28 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/poppins-v21-latin-300.woff2') format('woff2');
+  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
 }
 /* poppins-regular - latin */
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
   font-weight: 400;
-  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2');
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
 }
 /* poppins-600 - latin */
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
   font-weight: 600;
-  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
 }
 /* poppins-900 - latin */
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
   font-weight: 900;
-  src: url('../fonts/poppins-v21-latin-900.woff2') format('woff2');
+  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
 }
 
 * {
@@ -156,9 +156,13 @@ ul {
 } /*rgba - a для задавання прозорості 1 - не прозорий, 0 - прозорий*/
 
 /*Advantages-section*/
+
 .advandages-section {
   background-color: var(--colour-brand-light);
-  padding: 0px 16px; /*РАЗОБПАТЬСЯ С 24 ПИКСЕЛЯМИ. ОТКУДА ЛЕЗЕТ?*/
+  padding: 0px 16px; /*РАЗОБРАТЬСЯ С 24 ПИКСЕЛЯМИ. ОТКУДА ЛЕЗЕТ?*/
+}
+.advandages-section > .container {
+  padding: 16px 0;
 }
 .advantages-list {
   display: flex;
@@ -170,7 +174,9 @@ ul {
   font-size: 20px;
   font-weight: 300;
 }
+
 /*Tradition-section*/
+
 .traditions-section {
   padding-top: 96px;
 }
@@ -186,7 +192,6 @@ ul {
 .traditions-title {
   margin-bottom: 42px;
 }
-
 .section-title {
   font-size: 64px;
   font-weight: 900;
@@ -194,7 +199,7 @@ ul {
 }
 .section-title .accent {
   color: var(--colour-brand-dark);
-} /*{color: var(--colour-primary-dark);}*/
+}
 .traditions-text .brand-uppercase {
   text-transform: uppercase;
   color: var(--colour-brand-light);
@@ -209,11 +214,17 @@ ul {
 }
 
 /*Chef-section*/
-/*#chef-section .section-title {
-  text-align: center;
-}*/
+
 .chefs-title {
   margin-bottom: 80px;
+}
+.chef-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.chef-text-limited {
+  max-width: 334px;
 }
 .chef-text .brand-uppercase {
   text-transform: uppercase;
@@ -223,11 +234,14 @@ ul {
   font-weight: 600;
   margin-bottom: 16px;
 }
+.chef {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
 
 /*Format-section*/
-/*#format-section .section-title {
-  text-align: center;
-}*/
+
 .formats-title {
   margin-bottom: 80px;
 }
@@ -253,8 +267,14 @@ ul {
 }
 
 /*Contacts-section*/
+
 .contacts-title {
   margin-bottom: 16px;
+}
+.container-contacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 /*Footer*/
